@@ -6,9 +6,15 @@ app=Flask(__name__)
 # def fun():
 #     return "Hello world"
 
-@app.route("/y/<int:a>/<int:b>")
-def fu(a,b):
-    return f"{a+b}"
+def fun(a):
+    if a%2==0:
+        return "yes"
+    else:
+        return "no"
+        
+@app.route("/y/<int:a>")
+def fu(a):
+    return fun(a)
 
 if __name__=="__main__":
     app.run(debug=True)

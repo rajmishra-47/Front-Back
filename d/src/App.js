@@ -10,7 +10,8 @@ function App() {
 
   const a=()=>{
 
-    fetch(`/y/${set}/${set1}`).then((obj)=>obj.text())
+    // fetch(`/y/${set}/${set1}`).then((obj)=>obj.text())
+    fetch(`/y/${set}`).then((obj)=>obj.text())
     .then((mess)=>{
       reSet2(mess)
       console.log(String(mess));
@@ -32,7 +33,7 @@ function App() {
    <button onClick={a}>Click me</button>
 
    <input type="text" name="" id="" onChange={b} />
-   <input type="text" name="" id="" onChange={c}/>
+   {/* <input type="text" name="" id="" onChange={c}/> */}
 <h1>{set2}</h1>
    </>
   );

@@ -11,7 +11,7 @@ function App() {
   const a=()=>{
 
     // fetch(`/y/${set}/${set1}`).then((obj)=>obj.text())
-    fetch(`/y/${set}`).then((obj)=>obj.text())
+    fetch(`https://insistentgiantprinter.rajnandanmishra.repl.co/y/${set}`).then((obj)=>obj.text())
     .then((mess)=>{
       reSet2(mess)
       console.log(String(mess));
